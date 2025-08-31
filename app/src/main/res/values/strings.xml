@@ -43,4 +43,16 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <!--  新增書籍頁面 -str  -->
+    <string name="add_book_title">Title</string>
+    <string name="add_book_author">Author</string>
+    <string name="add_book_publication_year">Publication Year</string>
+    <string name="add_book_isbn">ISBN</string>
+    <string name="add_book_genre">Genre</string>
+    <string name="add_book_read">READ</string>
+    <string name="add_book_reading">READING</string>
+    <string name="add_book_wishlist">WISHLIST</string>
+    <string name="add_book_save_book">Save Book</string>
+    <!--  新增書籍頁面 -end  -->
 </resources>

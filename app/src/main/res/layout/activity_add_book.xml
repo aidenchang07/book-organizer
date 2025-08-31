@@ -13,32 +13,32 @@
             android:id="@+id/bookTitleEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Title" />
+            android:hint="@string/add_book_title" />
 
         <EditText
             android:id="@+id/bookAuthorEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Author" />
+            android:hint="@string/add_book_author" />
 
         <EditText
             android:id="@+id/bookPublicationYearEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Publication Year"
+            android:hint="@string/add_book_publication_year"
             android:inputType="number" />
 
         <EditText
             android:id="@+id/bookIsbnEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ISBN" />
+            android:hint="@string/add_book_isbn" />
 
         <EditText
             android:id="@+id/bookGenreEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Genre" />
+            android:hint="@string/add_book_genre" />
         <RadioGroup
             android:id="@+id/statusRadioGroup"
             android:layout_width="match_parent"
@@ -49,19 +49,19 @@
                 android:id="@+id/readRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="READ" />
+                android:text="@string/add_book_read" />
 
             <RadioButton
                 android:id="@+id/readingRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="READING" />
+                android:text="@string/add_book_reading" />
 
             <RadioButton
                 android:id="@+id/wishlistRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="WISHLIST" />
+                android:text="@string/add_book_wishlist" />
         </RadioGroup>
 
 
@@ -69,7 +69,7 @@
             android:id="@+id/saveBookButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save Book"
+            android:text="@string/add_book_save_book"
             android:layout_marginTop="16dp" />
 
     </LinearLayout>
