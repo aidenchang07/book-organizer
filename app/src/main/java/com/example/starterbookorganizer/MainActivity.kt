@@ -100,14 +100,19 @@ class MainActivity : AppCompatActivity() {
                 if (it.hasExtra("title")) {
                     val title = it.getStringExtra("title")
                     val author = it.getStringExtra("author")
-                    val publicationYear = it.getIntExtra("publicationYear", -1)
+                    val publicationYear = it.getIntExtra("publicationYear", 0)
                     val isbn = it.getStringExtra("isbn")
                     val genre = it.getStringExtra("genre")
-
                     val statusName = it.getStringExtra("status")
-                    val status = Category.valueOf(statusName!!)
 
-                    val newBook = Book(title!!, author!!, publicationYear, isbn!!, genre!!, status)
+                    val newBook = Book(
+                        title,
+                        author,
+                        publicationYear,
+                        isbn,
+                        genre,
+                        Category.fromName(statusName)
+                    ).toEntity()
                     books.add(newBook)
 
                     // Notify the ListView's adapter of the data change
