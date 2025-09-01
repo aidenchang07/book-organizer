@@ -1,6 +1,5 @@
 package com.example.starterbookorganizer
 
-
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -15,24 +14,12 @@ import android.widget.ListView
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.starterbookorganizer.domain.model.Book
+import com.example.starterbookorganizer.presentation.add_book.AddBookActivity
+import com.example.starterbookorganizer.presentation.add_book.Category
 
 const val REQUEST_CODE_ADD_BOOK = 1001
-
 class MainActivity : AppCompatActivity() {
-
-    enum class Category {
-        READ,
-        READING,
-        WISHLIST
-    }
-    data class Book(
-        val title: String,
-        val author: String,
-        val publicationYear: Int,
-        val isbn: String,
-        val genre: String,
-        val status: Category
-    )
 
     inner class BookAdapter(context: Context, private val books: List<Book>) : ArrayAdapter<Book>(context, 0, books) {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {

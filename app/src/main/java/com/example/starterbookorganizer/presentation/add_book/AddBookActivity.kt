@@ -1,13 +1,12 @@
-package com.example.starterbookorganizer
+package com.example.starterbookorganizer.presentation.add_book
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioGroup
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import com.example.starterbookorganizer.R
 
 class AddBookActivity : AppCompatActivity() {
 
@@ -57,7 +56,7 @@ class AddBookActivity : AppCompatActivity() {
                 putExtra("status", selectedStatus)
 
             }
-            setResult(Activity.RESULT_OK, resultIntent)
+            setResult(RESULT_OK, resultIntent)
             finish()
         }
     }
