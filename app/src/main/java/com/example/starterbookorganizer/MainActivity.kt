@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
     private lateinit var categorySpinner: Spinner
     private lateinit var bookListView: ListView
-    private lateinit var books: MutableList<Book>  // Book is a data class you should define
+    private lateinit var books: MutableList<Book>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,8 +66,6 @@ class MainActivity : AppCompatActivity() {
         categorySpinner = findViewById(R.id.categorySpinner)
         bookListView = findViewById(R.id.bookListView)
 
-//        val categories = listOf("READ", "READING", "WISHLIST")
-//        val status = listOf("READ", "READING", "WISHLIST")
         val categories = listOf(Category.READING, Category.READ, Category.WISHLIST)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
         categorySpinner.adapter = adapter
